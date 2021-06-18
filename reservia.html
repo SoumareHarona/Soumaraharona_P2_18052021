@@ -26,6 +26,13 @@
     
             </header> 
         </div>
+
+            <form>
+                <p><b>Trouvez votre hébergement pour des vacances de rêve</b></p><br>En plein centre ville ou en pleine nature</p>
+                <input type="search" name="search" placeholder="ville"/>
+                <input type="submit" value="Rechercher"/>
+                
+            </form>
             
 
            <div class="searchFiltersFilter">
@@ -53,12 +60,12 @@
 
 
             <div class="hebergement">
-                <div class="heb" style="background-color: red;padding: 30px;">
+                <div class="heb" style="background-color:#F2F2F2;padding: 30px;">
                     <p class="titre"><b>Hébergements à Marseille</b></p>
                     <div class="cards">
-                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" ></a>
+                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="cannebiere" ></a>
                             <p><b>Auberge la cannebière</b><br>Nuit à partir de 25€</p>
-                            <div class="stars">
+                            <div class="stars-cannebiere">
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star"></i>
@@ -66,9 +73,9 @@
                                 <i class="fa fa-star"></i>
                             </div>
                         </div>
-                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" ></a>
+                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="port" ></a>
                             <p><b>Hôtel du port</b><br> Nuit à partir de 52€</p>
-                            <div class="stars">
+                            <div class="stars-port">
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star"></i>
@@ -76,9 +83,9 @@
                                 <i class="fa fa-star"></i>
                             </div>
                         </div>
-                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" ></a>
+                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="mouettes" ></a>
                             <p><b>Hôtel les mouettes</b><br>Nuit à partir de 76€</p>
-                            <div class="stars">
+                            <div class="stars-mouettes">
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star"></i>
@@ -86,9 +93,9 @@
                                 <i class="fa fa-star"></i>
                             </div>
                         </div>
-                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" ></a>
+                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mer" ></a>
                             <p><b>Hôtel de la mer</b> <br> Nuit à partir de 46€</p>
-                            <div class="stars">
+                            <div class="stars-mer">
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star"></i>
@@ -96,9 +103,9 @@
                                 <i class="fa fa-star"></i>
                             </div>
                         </div>
-                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=""  ></a>
+                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="panier"  ></a>
                             <p><b>Auberge Le panier</b><br> à partir de 23€</p>
-                            <div class="stars">
+                            <div class="stars-panier">
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star"></i>
@@ -106,9 +113,9 @@
                                 <i class="fa fa-star"></i>
                             </div>
                         </div>
-                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" ></a>
+                        <div class="card"><a href="#"><img class="mosaique" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="amina" ></a>
                             <p><b>Hotel chez Amina</b><br> Nuit à partir de 96€</p>
-                            <div class="stars">
+                            <div class="stars-amina">
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star gold"></i>
                                 <i class="fa fa-star"></i>
@@ -125,7 +132,7 @@
             </div>
 
             <aside>
-                <div class="pop" style="background-color: blue;">
+                <div class="pop" style="background-color: #F2F2F2;">
                     <p class=titre-pop><b>les plus populaire</b></p>
                     <div class="item-aside">
                         <a href="#"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" height="100" width="220"></a>
@@ -142,11 +149,8 @@
                         <p><b>Hôtel Tout bleu et Bleu</b><br>Nuit à partir de 60€</p>
                     </div>
                 </div>
-            </aside>
-
-           
                 
-
+            </aside>
             <div class=acti><p><b>Les activités</b></p></div>
 
             <div class=activites>
