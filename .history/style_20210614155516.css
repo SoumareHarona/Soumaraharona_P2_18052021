@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+.navbar ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 1.5rem;
+  margin: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0065fc;
+}
+.navbar-logo {
+  flex: 1;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.navbar-links : :hover {
+  background-color: #deebff;
+}
+
+.titre {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+#hebergements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  width: 80%;
+  background-color: #f2f2f2;
+  margin-left: 80px;
+  align-items: center;
+  height: 600px;
+  border: 30px;
+}
+
+.items {
+  width: 220px;
+  height: 160px;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  border: 20px;
+}
+.items img {
+  width: 220px;
+  height: 110px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.items p {
+  margin-left: 10px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  height: 600px;
+  width: 300px;
+  text-align: right;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  position: relative;
+  top: -600px;
+  margin-right: 50px;
+  align-items: center;
+}
+
+.item-footer ul {
+  list-style-type: none;
+}
+
+.item-footer li {
+  align-items: center;
+}
+#footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f2f2f2;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.heb {
+  width: 70%;
+}
+.pop {
+  width: 30%;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .heb {
+    order: 2;
+    width: 100%;
+  }
+  .pop {
+    order: 1;
+    width: 100%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+}
+
+/* 
+@media (max-width: 600px) {
+        .navbar ul {
+            flex-wrap: wrap;
+        }
+        .navbar-links {
+            width: 100%;
+            text-align: center;
+        }
+        .aside {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+        }
+
+} */
