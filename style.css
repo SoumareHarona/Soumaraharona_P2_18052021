@@ -1,171 +1,353 @@
-import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+nav > a {
+    margin-left: 1vw;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 1vw;
+    
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav ul li:nth-child(1) a,
+nav ul li:nth-child(3) a{
+    color:#0065FC;
+}
+
+nav ul li:nth-child(3) a{
+    font-weight: bold;
+}
+
+.filter {
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+
+form{
+    position: relative;
+    width: 100%;
+
+}
+
+.filter form p {
+    color:gray;
+    padding-bottom: 20px;
+}
+
+.input_field {
+    position: relative;
+    width: 30%;
+    height: 37px;
+
+
+}
+
+.input_field i {
+    position: absolute;
+    height: 100%;
+    z-index: 5;
+    line-height: 37px;
+    background-color: #F2F2F2;
+    padding: 0 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px ;
+    
+}
+
+.input_field input[type=search],
+.input_field input[type=search]:focus {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #F2F2F2;
+    font-size:30px ;
+    border-radius: 10px;
+    padding-left: 12%;
+    outline: none;
+}
+
+.input_field input[type=search]::placeholder{
+    position: absolute;
+    display: block;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: bold;
+}
+.input_field button  {
+    display: block;
+    position: absolute; 
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background-color: #0065FC;
+    color: #F2F2F2;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+.filtre_avance {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+.filtre_avance p {
+    padding-right: 20px;
+    font-weight: bold;
+    line-height: 41px;
 }
 
 
-
-
-
-
-
-.navbar ul {
+.groupe_filter {
+    position: relative;
     display: flex;
-    width: 100%;
+    width: 80%;
+
+}
+
+.groupe_filter {
+    position: relative;
+    display: flex;
+    padding-bottom: 2vw;
+}
+
+.groupe_filter div{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    background-color: white;
-  }
+}
 
-  .navbar li {
-    list-style-type: none;
-    padding: 1.5rem;
-    margin: 10px;
-  }
+.groupe_filter div p {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    padding-left: 50px;
+    border: 2px solid #DEEBFF;
+    border-radius: 50px;
+    font-weight: bold;
+}
 
-  .navbar a {
-    text-decoration: none;
-    color: #0065fc;
-  }
+.groupe_filter div i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 41.91px;
+    height: 100%;
+    color: #0065FC;
+    line-height: 41.91px;
+    text-align: center;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+}
 
-  .navbar a : :hover{
-      background-color:#0065fc;
-  }
+.filter > p i{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #0065FC;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
 
-  .navbar-logo {
-    flex: 1;
-    font-size: 1.5rem;
-    user-select: none;
-  }
+main {
+    margin-top: 20px;
+    margin-left: 1vw;
+}
 
+section#Heb_Pop .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 
-.searchFiltersFilter{
+}
+
+section#Heb_Pop .container .cards{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    padding: 3%;
+    height: 110vh;
+    margin-right: 2%;
+    background-color:#F2F2F2;
+}
+
+section#Heb_Pop .cards h2{
+    margin-bottom: 20px;
+}
+section#Heb_Pop .container .cards .group{
     display: flex;
     justify-content: start;
-    margin: 30px;
-    gap: 4rem;
-}
-
- .searchFiltersFilterWrapicon  {
-    color:#0065FC;
-    border: 30px;
-    font-size: 25px;
-    border: solid 5px;
-    border-color:#deebff ;
-    border-radius: 100px;
-    align-self: center;
-    
-}
-
-.searchFiltersFilterWrapicon i{
-    background-color:#deebff;
-    border-radius: 100px;
-    border: 30px;
-}
-
-
-.searchFiltersFilterWrapiconIcon  {
-    background-color: #DEEBFF;
-    border-radius: 50px;
-    
-    
-
-}
-
-
-.searchFiltersFilterTitle {
-    color: black;
-    border-color: #deebff;
-    font-size: 25px;
-    text-align: center;
-  
-
-}
-
-.heb {
-    display: flex;
-    justify-content: space-between; 
     flex-wrap: wrap;
-    max-width: 800px;
-    width: 100%;
-    margin-top: 150px;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
-.titre {
-    margin: 20px;
-}
-
-}
-
-
-.herbergement {
-    display: flex;
-    flex-direction: row;
-    height: 625px;
-    padding: 10px;
-    margin-left: 30px;
-
-     
-}
-
-.mosaique {
-    width: 220px;
-    height: 110px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  
-  }
-
-
-
-
-
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-    
-   
-
-}
-
-
-
-
-.card {
-    display: flex
-    width: 220px;
-    background-color: white;
+section#Heb_Pop .container .card{
+    position: relative;
+    width: 30%;
+    margin-bottom: 3vw;
+    background-color: #fff;
+    border: 4px solid #fff;
     border-radius: 10px;
 }
 
-.card p {
-    margin-left: 10px;
+section#Heb_Pop .container .card .card_image{
+    width: 100%;
 }
 
-.card img {
-
-    width: 220px;
+section#Heb_Pop .container .card .card_image img{
+    width: 100%;
     height: 160px;
-    padding: 5px;
-    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+
+section#Heb_Pop .container .card .card_content strong,
+section#Heb_Pop .container .card .card_content span{
+    display: block;
+}
+
+section#Heb_Pop .container .card .card_content{
+
 }
 
 
 
 
-.pop{
-width: 300px;
-position: relative;
-left: 75%;
-top: -750px;
-height: 740px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section#Heb_Pop .asidebar {
+    position: relative;
+    background-color: #F2F2F2;
+    width: 30%;
+    border-radius: 10px;
+    height: 110vh;
 }
+
+section#Heb_Pop .asidebar div.title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+section#Heb_Pop .asidebar div.title h3{
+    padding-left: 1vw;
+    margin-top: 2vw;
+}
+
+section#Heb_Pop .asidebar div.title i{
+    padding-right: 1vw;
+    margin-top: 2vw;
+}
+
+section#Heb_Pop .asidebar .group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vw;
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar{
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 130px;
+    margin-bottom: 3vw;
+    background-color: #fff;
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar .card_image{
+    position: relative;
+    width: 100px;
+    height: 130px;
+    margin-right: 10px;
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar .card_image img{
+    width: 100px;
+    height: 130px;
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar .desc{
+    display: flex;
+    flex-direction: column;
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar .desc .card_content strong,
+section#Heb_Pop .asidebar .group .card_asidebar .desc .card_content span{
+    display: block;
+}
+section#Heb_Pop .asidebar .group .card_asidebar .desc .card_content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar .desc .card_note{
+    position: relative;
+    height: 60px;
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar .desc .card_note .et{
+    position: absolute;
+    bottom: 0;
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar:nth-child(2) .desc .card_note .et{
+    height: 40px;
+}
+
 
 .activites{
     display: grid;
