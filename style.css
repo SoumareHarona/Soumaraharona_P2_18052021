@@ -6,44 +6,55 @@
     font-family: 'Raleway', sans-serif;
 }
 
-nav {
+/*header*/
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.headerflex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    width: 100%;
+    margin-bottom: 35px;
 }
 
-nav > a {
-    margin-left: 1vw;
+.logo{
+    margin-top: 30px;
+    flex: 1;
 }
 
-nav ul {
+nav li{
+    padding-top: 40px;
+}
+
+nav a{
+    padding: 40px 30px 0;
+}
+
+.inscription{
+    color: #0065FC;
+    font-weight: 700;
+    padding: 40px 40px 0;
+}
+
+nav li a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 38px;
+}
+
+.ulflex{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: 1vw;
-    
 }
 
-nav ul li {
-    list-style-type: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 0 10px;
-}
-
-nav ul li:nth-child(1) a,
-nav ul li:nth-child(3) a{
-    color:#0065FC;
-}
-
-nav ul li:nth-child(3) a{
-    font-weight: bold;
-}
+/*filtre*/
 
 .filter {
     margin-left: 1vw;
@@ -63,7 +74,7 @@ form{
 
 .input_field {
     position: relative;
-    width: 30%;
+    width: 350px;
     height: 37px;
 
 
@@ -140,7 +151,10 @@ form{
 .groupe_filter {
     position: relative;
     display: flex;
-    padding-bottom: 2vw;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 1vw;
+   
 }
 
 .groupe_filter div{
@@ -153,11 +167,16 @@ form{
 .groupe_filter div p {
     width: 100%;
     height: 100%;
-    margin-right: 10px;
+    margin-right: 20px;
     padding-left: 50px;
     border: 2px solid #DEEBFF;
     border-radius: 50px;
     font-weight: bold;
+}
+
+.groupe_filter div :hover{
+    background-color: #0065FC;
+    color: #fff;
 }
 
 .groupe_filter div i{
@@ -173,7 +192,7 @@ form{
     border-radius: 50%;
 }
 
-.filter > p i{
+.filter .infos i{
     width: 40px;
     height: 40px;
     background-color: #fff;
@@ -184,6 +203,10 @@ form{
     text-align: center;
 }
 
+.filter .infos {
+    margin-bottom: 20px;
+}
+
 main {
     margin-top: 20px;
     margin-left: 1vw;
@@ -191,34 +214,36 @@ main {
 
 section#Heb_Pop .container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    
+    
 
 }
 
 section#Heb_Pop .container .cards{
     display: flex;
-    flex-direction: column;
-    max-width: 70%;
+    flex-wrap: wrap;
+    width: 70%;
     padding: 3%;
-    height: 110vh;
+    height: 100vh;
     margin-right: 2%;
     background-color:#F2F2F2;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 section#Heb_Pop .cards h2{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 section#Heb_Pop .container .cards .group{
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
 }
 
 section#Heb_Pop .container .card{
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     width: 30%;
     margin-bottom: 3vw;
     background-color: #fff;
@@ -226,25 +251,39 @@ section#Heb_Pop .container .card{
     border-radius: 10px;
 }
 
+section#Heb_Pop .container .card{
+   
+}
 section#Heb_Pop .container .card .card_image{
     width: 100%;
 }
 
 section#Heb_Pop .container .card .card_image img{
     width: 100%;
-    height: 160px;
+    height: 120px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    object-fit: cover;
    
 }
 
 section#Heb_Pop .container .card .card_content strong,
 section#Heb_Pop .container .card .card_content span{
     display: block;
+   margin-right: 5px;
 }
 
 section#Heb_Pop .container .card .card_content{
 
+}
+
+section#Heb_Pop .container .card .card_note .bluestar{
+    color: #0065FC;
+   
+}
+
+section#Heb_Pop .container .card .card_note .graystar{
+    color: gray;
 }
 
 
@@ -270,7 +309,8 @@ section#Heb_Pop .asidebar {
     background-color: #F2F2F2;
     width: 30%;
     border-radius: 10px;
-    height: 110vh;
+    height: 100vh;
+    margin-right: 1vw;;
 }
 
 section#Heb_Pop .asidebar div.title{
@@ -302,26 +342,40 @@ section#Heb_Pop .asidebar .group .card_asidebar{
     position: relative;
     display: flex;
     width: 90%;
-    height: 130px;
-    margin-bottom: 3vw;
+    height: 120px;
+    margin-bottom: 2vw;
+    border: solid 5px #fff;
     background-color: #fff;
+    border-radius: 15px;
+    
 }
 
+section#Heb_Pop .asidebar .group .card_asidebar .card_note .et .bluestar{
+    color: #0065FC;
+
+}
+
+section#Heb_Pop .asidebar .group .card_asidebar .card_note .et .graystar{
+    color: gray;
+}
 section#Heb_Pop .asidebar .group .card_asidebar .card_image{
     position: relative;
     width: 100px;
-    height: 130px;
+    height: 110px;
     margin-right: 10px;
 }
 
 section#Heb_Pop .asidebar .group .card_asidebar .card_image img{
     width: 100px;
-    height: 130px;
+    height: 110px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 section#Heb_Pop .asidebar .group .card_asidebar .desc{
-    display: flex;
-    flex-direction: column;
+    display: block;
+    
 }
 
 section#Heb_Pop .asidebar .group .card_asidebar .desc .card_content strong,
@@ -349,58 +403,76 @@ section#Heb_Pop .asidebar .group .card_asidebar:nth-child(2) .desc .card_note .e
 }
 
 
+
+
+
+
+
+
+
+
+
 .activites{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 225px;
-    grid-gap: 1;
-    margin: 30px;
-
- 
-
+    justify-content: center;
+    align-items: center
+    padding: ;
+    margin-bottom: 15px;
+    margin-left: 1vw;
+    
 }
-
 
 
 
 /*dimension des images*/
 
+
+.mosa {
+    object-fit: cover;
+}
+
 .item-a  img {
-    width:250px;
-    height: 450px;
-    background-color: white;
+    display: flex;
+    width: 90%;
+    height: 100%;
+
     
-    
+      
 }
 
 .item-b img{
-    width: 250px;
-    height: 200px;
-  
+    width: 90%;
+    height:170px ;
+   
 }
 
 .item-c img {
-    width: 250px;
-    height: 140px;
+    width: 90%;
+    height: 130px;
+    
    
 }
 
 .item-d img{
-    width:250px;
-    height: 450px;
+    width: 90%;
+    height: 380px;
+    
     
 }
 
 .item-e img {
-    width: 250px;
-    height: 180px;
-   
+    width: 90%;
+    height: 190px;
+    
 
 }
 
 .item-f img {
-    width: 250px;
-    height: 180px;
+    width: 90%;
+    height: 190px;
+    
     
 
 }
@@ -408,9 +480,12 @@ section#Heb_Pop .asidebar .group .card_asidebar:nth-child(2) .desc .card_note .e
 /*les item grid*/
 
 .item-a{
+    background-color: #fff;
+    border-radius: 15px;
     grid-column-start: 1;
-    grid-row-start: span 2 ;
-    background-color: white;
+    grid-row-start: 1;
+  
+    
    
     
 }
@@ -418,31 +493,37 @@ section#Heb_Pop .asidebar .group .card_asidebar:nth-child(2) .desc .card_note .e
 .item-b {
     grid-column-start: 2;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end:2 ;
+
+    
+    
+   
 }
 
 
 .item-c{
     grid-column-start: 2;
     grid-row-start: 2;
-    align-self: end;
-
-    
+    grid-row-end: 3;
+    align-self: end;  
 }
 
 .item-d{
-    grid-column-start: 3;
-    grid-row-start: span 2;
-
- 
+   grid-column-start: 3;
+   grid-row-start: 1;
+   grid-row-end: 3;
+   
+   
 
 } 
 
+.item-e
 
 .item-f{
     grid-column-start: 4;
     grid-row-start: 2;
-    align-self: end;
+    grid-row-end: 3;
+   
 }
 
 
@@ -456,10 +537,106 @@ section#Heb_Pop .asidebar .group .card_asidebar:nth-child(2) .desc .card_note .e
 #footer{
 
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     flex-wrap: wrap;
-    align-items: center;
+    align-items:center;
     background-color:#F2F2F2;
     max-width: 1400px;
     width: 100%;
+    height: 150px ;
 }
+
+
+
+
+
+
+
+/*verstion tablette*/
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .cards {
+      order: 2;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .group{
+        flex-direction: row;
+
+    }
+    .asidebar {
+      display: flex;
+      flex-direction:column ;
+      flex-grow: 1;
+      margin-bottom: 30px;
+      order: 1;
+    }
+    
+
+    
+
+   
+  
+
+
+  }
+
+
+
+/* Mobile version */
+@media only screen and (max-width: 600px){
+
+
+    /* Header - Mobile */
+
+    header{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-left: 0px;
+    }
+
+    .inscription{
+        align-self: flex-end;
+        padding: 0;
+        margin-right: 20px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    nav{
+        order:3;
+    }
+    
+    nav ul{
+        width: 100%;
+    }
+
+    nav li{
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    nav li a{
+        padding: 30px;
+    }
+
+    nav li a:hover{
+        border-top: none;
+    }
+
+    nav li:hover{
+        border-bottom-color:#0065FC;
+    }
+}
+    /* Search - Mobile */
+
+   
