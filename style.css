@@ -468,7 +468,7 @@ main {
     grid-column-start: 1;
     grid-column-end: 2; 
     grid-row-end: span 2;
-    place-self: ed;
+    place-self: end;
 }
 
 .item-b {
