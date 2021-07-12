@@ -1,4 +1,4 @@
-*.history
-*.vscode
-*.md
-*yml
+.history
+.vscode
+.md
+.yml
