@@ -343,7 +343,7 @@ main {
     position: relative;
     display: flex;
     width: 90%;
-    height: 150px;
+    height: 170px;
     border: solid 5px #fff;
     background-color: #fff;
     border-radius: 15px;
@@ -360,14 +360,14 @@ main {
 
 .populaire .group .card_populaire .card_image{
     position: relative;
-    width: 120px;
-    height: 140px;
+    width: 130px;
+    height: 160px;
     margin-right: 10px;
 }
 
 .populaire .group .card_populaire .card_image img{
-    width: 120px;
-    height: 140px;
+    width: 130px;
+    height: 160px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
