@@ -381,7 +381,7 @@ main {
 .populaire .group .card_populaire .desc .card_content strong,
 .populaire .group .card_populaire .desc .card_content span{
     display: block;
-    padding: 3px;
+    padding: 2px;
 }
 .populaire .group .card_populaire .desc .card_content{
     display: flex;
