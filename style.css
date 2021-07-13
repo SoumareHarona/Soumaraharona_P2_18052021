@@ -643,6 +643,9 @@ main {
     }
 
     /*barre de recherche*/
+    .filter {
+        padding: 10px;
+    }
     .filtre_avance {
       flex-direction: column;
     }
