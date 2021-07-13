@@ -199,6 +199,7 @@ form{
 
 .filter .infos span{
     margin-left: 10px;
+    padding: 10px;
 }
 .filter .infos {
     margin-bottom: 20px;
@@ -374,38 +375,21 @@ main {
 }
 
 .populaire .group .card_populaire .desc{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    /*align-items: stretch;*/
+    padding:2px;
     
 }
 
-.populaire .group .card_populaire .desc .card_content strong,
-.populaire .group .card_populaire .desc .card_content span{
-    display: block;
-    padding: 2px;
-}
 .populaire .group .card_populaire .desc .card_content{
     display: flex;
     flex-direction: column;
     padding-top: 10px;
 }
 
-.populaire .group .card_populaire .desc{
-    display: block;
-}
- .populaire .group .card_populaire .desc .et {
-    position: relative;
-    height: 20px;
-}
 
- .populaire .group .card_populaire .desc  .et{
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 10px;
-}
-
-.populaire .group .card_populaire:nth-child(2) .desc .et{
-    height: 20px; 
-}
 
 .populaire .group .card_populaire .desc .et .bluestar{
     color: #0065FC;
@@ -625,6 +609,11 @@ main {
   /* Mobile version */
   
   @media screen and (max-width: 768px) {
+
+    main{
+        padding: 0;
+        margin: auto;
+    }
     header {
       grid-template-columns: auto 1fr auto;
       grid-template-areas: "logo . signup" "nav nav nav";
@@ -661,6 +650,9 @@ main {
         gap: 1rem;
         font-size: 15px;
         width: 350px;
+    }
+    .input_field{
+        margin: auto;
     }
     .input_field button span {
       display: none;
@@ -738,6 +730,10 @@ main {
         height: auto;
         
       }
+
+    .item-footer{
+        padding-right: 0;
+    }
   }
 
 
