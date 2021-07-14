@@ -7,7 +7,7 @@
 }
 
 body{
-    min-width: 353px;
+    min-width: 320px;
     max-width: 1600px;
     
 }
@@ -68,7 +68,7 @@ form{
 
 .input_field {
     position: relative;
-    width: 320px;
+    width: 340px;
     height: 37px;
 }
 
@@ -634,6 +634,7 @@ main {
   /* Mobile version */
   
   @media screen and (max-width: 768px) {
+   
     header {
       grid-template-columns: auto 1fr auto;
       grid-template-areas: "logo . signup" "nav nav nav";
@@ -754,9 +755,7 @@ main {
       .item-footer:nth-child(3){
         padding-left: 0;
     }
-
-      
-  }
+}
 
 
 
