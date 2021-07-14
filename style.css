@@ -68,7 +68,7 @@ form{
 
 .input_field {
     position: relative;
-    width: 350px;
+    width: 320px;
     height: 37px;
 }
 
@@ -212,7 +212,7 @@ form{
 
 main {
     margin-top: 20px;
-    padding: 20px;
+    padding: 1rem;
 }
 
 .container {
