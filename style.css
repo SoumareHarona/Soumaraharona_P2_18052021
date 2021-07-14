@@ -7,7 +7,7 @@
 }
 
 body{
-    min-width: 320px;
+    min-width: 353px;
     max-width: 1600px;
     
 }
@@ -61,7 +61,7 @@ form{
 }
 
 .filter form p {
-    color:gray;
+    color: black;
     padding-bottom: 20px;
     padding-top: 15px;
 }
@@ -92,7 +92,7 @@ form{
     border: 1px solid #F2F2F2;
     font-size:30px ;
     border-radius: 10px;
-    padding-left: 12%;
+    padding-left: 16%;
     outline: none;
 }
 
@@ -115,7 +115,7 @@ form{
     border-bottom-right-radius: 10px;
     border: none;
     background-color: #0065FC;
-    color: #F2F2F2;
+    color: #fff;
     padding: 0 15px;
     font-weight: bold;
     cursor: pointer;
@@ -204,11 +204,15 @@ form{
     margin:2rem 0 ;
 }
 
+.texte{
+    color: black;
+}
+
 
 
 main {
     margin-top: 20px;
-    padding: 5px;
+    padding: 20px;
 }
 
 .container {
@@ -665,13 +669,17 @@ main {
     .groupe_filter{
         gap: 1rem;
         font-size: 15px;
-        width: 350px;
+       width: 350px;
     }
+
     .input_field button span {
       display: none;
     }
     .input_field button i {
       display: block;
+    }
+    .information{
+        font-size: 15px;
     }
 
     /*hébergement et populaire*/
