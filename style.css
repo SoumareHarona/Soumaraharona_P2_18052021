@@ -195,16 +195,16 @@ form{
     border-radius: 50%;
     line-height: 40px;
     text-align: center;
+    margin-right: 1rem;
 }
 
 .information{
     display: flex;
     align-items: baseline;
+    margin:2rem 0 ;
 }
-.filter .infos {
-    margin-bottom: 20px;
-    margin-top: 25px;
-}
+
+
 
 main {
     margin-top: 20px;
@@ -582,6 +582,10 @@ main {
   margin-bottom: 10px;
 }
 
+.item-footer:nth-child(3){
+    padding-left: 8rem;
+}
+
 /*version tablette*/
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
@@ -739,10 +743,11 @@ main {
         height: auto;
         
       }
+      .item-footer:nth-child(3){
+        padding-left: 0;
+    }
 
-      .item-footer{
-          padding-right: 0;
-      }
+      
   }
 
 
