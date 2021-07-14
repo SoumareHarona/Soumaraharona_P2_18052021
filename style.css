@@ -197,9 +197,9 @@ form{
     text-align: center;
 }
 
-.filter .infos span{
-    margin-left: 10px;
-    padding: 10px;
+.information{
+    display: flex;
+    align-items: baseline;
 }
 .filter .infos {
     margin-bottom: 20px;
@@ -208,7 +208,7 @@ form{
 
 main {
     margin-top: 20px;
-    padding: 1rem;
+    padding: 5px;
 }
 
 .container {
@@ -375,21 +375,38 @@ main {
 }
 
 .populaire .group .card_populaire .desc{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    /*align-items: stretch;*/
-    padding:2px;
+    display: block;
     
 }
 
+.populaire .group .card_populaire .desc .card_content strong,
+.populaire .group .card_populaire .desc .card_content span{
+    display: block;
+    padding: 2px;
+}
 .populaire .group .card_populaire .desc .card_content{
     display: flex;
     flex-direction: column;
     padding-top: 10px;
 }
 
+.populaire .group .card_populaire .desc{
+    display: block;
+}
+ .populaire .group .card_populaire .desc .et {
+    position: relative;
+    height: 20px;
+}
 
+ .populaire .group .card_populaire .desc  .et{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.populaire .group .card_populaire:nth-child(2) .desc .et{
+    height: 18px; 
+}
 
 .populaire .group .card_populaire .desc .et .bluestar{
     color: #0065FC;
@@ -609,11 +626,6 @@ main {
   /* Mobile version */
   
   @media screen and (max-width: 768px) {
-
-    main{
-        padding: 0;
-        margin: auto;
-    }
     header {
       grid-template-columns: auto 1fr auto;
       grid-template-areas: "logo . signup" "nav nav nav";
@@ -643,9 +655,6 @@ main {
     }
 
     /*barre de recherche*/
-    .filter {
-        padding: 10px;
-    }
     .filtre_avance {
       flex-direction: column;
     }
@@ -653,9 +662,6 @@ main {
         gap: 1rem;
         font-size: 15px;
         width: 350px;
-    }
-    .input_field{
-        margin: auto;
     }
     .input_field button span {
       display: none;
@@ -734,9 +740,9 @@ main {
         
       }
 
-    .item-footer{
-        padding-right: 0;
-    }
+      .item-footer{
+          padding-right: 0;
+      }
   }
 
 
