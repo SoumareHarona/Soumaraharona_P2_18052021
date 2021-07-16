@@ -239,15 +239,15 @@ main {
 
 .hebergement  h2{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-left: 30px;
 }
 .container .hebergement .hotels {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
-    align-content: center;
+    row-gap: 2rem;
+    align-content: flex-start;
     padding: 0 2rem;
 }
 
@@ -328,19 +328,20 @@ main {
 .populaire div.title{
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    
    
 }
 
 .populaire div.title h2{
     padding-left: 1vw;
-    margin-top: 2vw;
+    
 }
 
  .populaire div.title i{
      font-size: 30px;
     padding-right: 1rem;
-    margin-top: 2vw;
+  
 }
 
 .populaire .group{
@@ -357,7 +358,7 @@ main {
     position: relative;
     display: flex;
     width: 90%;
-    height: 170px;
+    height: 160px;
     border: solid 5px #fff;
     background-color: #fff;
     border-radius: 15px;
@@ -374,14 +375,14 @@ main {
 
 .populaire .group .card_populaire .card_image{
     position: relative;
-    width: 130px;
-    height: 160px;
+    width: 120px;
+    height: 150px;
     margin-right: 10px;
 }
 
 .populaire .group .card_populaire .card_image img{
-    width: 130px;
-    height: 160px;
+    width: 120px;
+    height: 150px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -633,6 +634,8 @@ main {
 
     .groupe_filter {
       margin-top: 10px;
+      width: 100%;
+      gap: 1rem;
     }
 
     
