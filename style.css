@@ -61,14 +61,14 @@ form{
 }
 
 .filter form p {
-    color: black;
+    color:gray;
     padding-bottom: 20px;
     padding-top: 15px;
 }
 
 .input_field {
     position: relative;
-    width: 340px;
+    width: 350px;
     height: 37px;
 }
 
@@ -92,7 +92,7 @@ form{
     border: 1px solid #F2F2F2;
     font-size:30px ;
     border-radius: 10px;
-    padding-left: 16%;
+    padding-left: 12%;
     outline: none;
 }
 
@@ -115,7 +115,7 @@ form{
     border-bottom-right-radius: 10px;
     border: none;
     background-color: #0065FC;
-    color: #fff;
+    color: #F2F2F2;
     padding: 0 15px;
     font-weight: bold;
     cursor: pointer;
@@ -146,7 +146,7 @@ form{
     position: relative;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-bottom: 1vw;
+    
    
 }
 
@@ -195,20 +195,27 @@ form{
     border-radius: 50%;
     line-height: 40px;
     text-align: center;
-    margin-right: 1rem;
-}
 
-.information{
+}.information {
     display: flex;
+    padding: 2rem 0;
     align-items: baseline;
-    margin:2rem 0 ;
+    width: 100%;
 }
 
 .texte{
-    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+
 }
 
 
+.filter .infos {
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
 
 main {
     margin-top: 20px;
@@ -218,6 +225,7 @@ main {
 .container {
     display: flex;
     column-gap: 2rem;
+    
 }
 
 .container .hebergement{
@@ -230,17 +238,17 @@ main {
 }
 
 .hebergement  h2{
-  margin-top: 50px;
-    margin-left: 30px;
-    margin-bottom: -4rem;
-}
-.container .hebergement .hotels{
     display: flex;
-    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-left: 30px;
+}
+.container .hebergement .hotels {
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
-    row-gap: 2rem;
-    
+    gap: 2rem;
+    align-content: center;
+    padding: 0 2rem;
 }
 
 .hoteldescription:hover {
@@ -582,13 +590,13 @@ main {
   
 }
 
+.item-footer:nth-child(2){
+    margin-right: 6rem;
+}
+
 
 .footer li{
   margin-bottom: 10px;
-}
-
-.item-footer:nth-child(3){
-    padding-left: 8rem;
 }
 
 /*version tablette*/
@@ -636,9 +644,8 @@ main {
   
   @media screen and (max-width: 768px) {
       main{
-          padding: 0.5rem;
+          padding: 0.3rem;
       }
-   
     header {
       grid-template-columns: auto 1fr auto;
       grid-template-areas: "logo . signup" "nav nav nav";
@@ -674,17 +681,13 @@ main {
     .groupe_filter{
         gap: 1rem;
         font-size: 15px;
-       width: 350px;
+        width: 350px;
     }
-
     .input_field button span {
       display: none;
     }
     .input_field button i {
       display: block;
-    }
-    .information{
-        font-size: 15px;
     }
 
     /*hébergement et populaire*/
@@ -693,15 +696,21 @@ main {
       flex-wrap: wrap;
       flex-direction: column;
     }
+
+    .container .hebergement .hotels{
+        padding: 0 0;
+    }
     .container .hebergement {
       width: 100%;
       order: 2;
       background-color:#fff;
       gap: 1rem;
       
+      
     }
     .hebergement h2{
         margin-left: 0;
+        margin-top: 2rem;
 
     }
 
@@ -754,12 +763,16 @@ main {
         gap: 1rem;
         padding: 2rem 1rem;
         height: auto;
-        
       }
-      .item-footer:nth-child(3){
-        padding-left: 0;
-    }
-}
+
+      .item-footer{
+          padding: 0;
+      }
+
+      .item-footer:nth-child(2){
+          margin-right: 0;
+      }
+  }
 
 
 
