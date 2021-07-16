@@ -37,8 +37,14 @@ a {
     padding: 2rem;
     font-weight: 500;
     text-align: center;
+    transition-duration: 0.1s;
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
+  }
+
+  .header__nav__navlink[data-active=true]{
+      color: #0065FC;
+      border-top: 3px solid #0065FC;
   }
   .header__nav__navlink:hover {
     color: #0065fc;
@@ -576,6 +582,7 @@ main {
     width: 100%;   
     margin-right: 50px;
     padding-left: 3rem;
+    padding-bottom: 2rem;
    
 }
 
