@@ -672,6 +672,14 @@ main {
       order: 2;
     }
 
+    .header__nav__navlink[data-active=true]{
+        border-top: none;
+    }
+    .header__nav__navlink[data-active=true]{
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+
     .header__nav__navlink {
       border-top: none;
       border-bottom: 3px solid #f2f2f2;
